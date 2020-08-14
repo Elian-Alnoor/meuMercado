@@ -1,0 +1,40 @@
+{
+    "Produtos": [
+        {
+            "id": 1,
+            "nome": "Alface",
+            "preco": 2.50,
+            "foto": "produtos/alface.jpg"
+        },
+        {
+            "id": 2,
+            "nome": "Banana",
+            "preco": 5.30,
+            "foto": "produtos/bananas.jpg"
+        },
+        {
+            "id": 3,
+            "nome": "Cenoura",
+            "preco": 4.8,
+            "foto":"produtos/cenoura.jpg"
+        },
+        {
+            "id": 4,
+            "nome": "Melancia",
+            "preco": 8.00,
+            "foto": "produtos/melancia.jpg"
+        },
+        {
+            "id": 5,
+            "nome": "Pimenta",
+            "preco": 3.20,
+            "foto": "produtos/pimenta.jpg"
+        },
+        {
+            "id": 6,
+            "nome": "Tomate",
+            "preco": 6.40,
+            "foto":"produtos/tomate.jpg"
+        }
+    ]
+}
