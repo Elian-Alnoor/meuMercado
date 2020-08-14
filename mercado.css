@@ -1,0 +1,47 @@
+.card{
+    width:224px;
+    border:1px solid grey;
+    font-family:Avenir;
+    float:left;
+    margin:auto;
+  }
+  .card article{
+    position:relative;
+  }
+  
+  .heart{
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    opacity:0;
+    transition: all .3s ease;
+    background:rgba(255,255,255,.7);
+    border-radius: 50%;
+    padding:5px;
+  }
+  .card:hover .heart{
+    opacity:1;
+  }
+  .trucky{
+    position:absolute;
+    bottom: -20px;
+    right: 15px;
+    background-color:darkgrey;
+    border-radius: 50%;
+    padding: 5px
+  }
+  
+  .price{
+    padding-left: 30px;
+  }
+  .description p{
+   height:0;
+    opacity:0;
+     transition: all .3s ease; 
+  }
+  .card:hover .description p{
+    height:50px;
+    opacity:1;
+    
+  }
+  
