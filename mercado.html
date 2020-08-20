@@ -20,13 +20,18 @@
 
   <link rel="stylesheet" ; href="mercado.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="mercado.js"></script>
+
+  <link rel='shortcut icon' href='logo.png'>
+
+  <title>MeuMercado Online</title>
 
 
 <body>
   <div class='container'>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#"><img src = 'logo.png'>MeuMercado</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,107 +68,20 @@
       </div>
     </nav>
 
-    <!-- Cards  -->
-
-    <!-- Primeiro -->
-    <div class='row'>
-      <div class="card col-lg-3">
-
-        <article>
-            <img src="" alt="case">
-            <i class="heart">
-              <img width="20"
-                src="http://www.onlygfx.com/wp-content/uploads/2017/08/red-watercolor-heart-2-1-300x267.png" alt="">
-            </i>
-
-          <button class="trucky">
-            <img width="30" src="https://cdn3.iconfinder.com/data/icons/sympletts-part-10/128/truck-speed-512.png"
-              alt="lil truck">
-          </button>
-        </article>
-        <article class="price">
-          <h2>$ 349</h2>
-          <p>12 x $ 34.48</p>
-        </article>
-        <article class="description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </article>
-      </div>
-
-      <!-- Segundo -->
-      <div class="card col-lg-3">
-
-        <article>
-          <img width="100%" src="https://http2.mlstatic.com/D_Q_NP_614744-MLM26769593283_022018-AB.webp"
-            alt="audifonos">
-          <i class="heart">
-            <img width="20" src="http://www.onlygfx.com/wp-content/uploads/2017/08/red-watercolor-heart-2-1-300x267.png"
-              alt="">
-          </i>
-          <i class="trucky">
-            <img width="30" src="https://cdn3.iconfinder.com/data/icons/sympletts-part-10/128/truck-speed-512.png"
-              alt="lil truck">
-          </i>
-        </article>
-        <article class="price">
-          <h2>$ 349</h2>
-          <p>12 x $ 34.48</p>
-        </article>
-        <article class="description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </article>
-      </div>
-
-      <!-- Terceiro -->
-      <div class="card col-lg-3">
-
-        <article>
-          <img width="100%" src="https://http2.mlstatic.com/D_Q_NP_702286-MLM27582187819_062018-AB.webp" alt="
-              audifonos">
-          <i class="heart">
-            <img width="20" src="http://www.onlygfx.com/wp-content/uploads/2017/08/red-watercolor-heart-2-1-300x267.png"
-              alt="">
-          </i>
-          <i class="trucky">
-            <img width="30" src="https://cdn3.iconfinder.com/data/icons/sympletts-part-10/128/truck-speed-512.png"
-              alt="lil truck">
-          </i>
-        </article>
-        <article class="price">
-          <h2>$ 349</h2>
-          <p>12 x $ 34.48</p>
-        </article>
-        <article class="description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </article>
-      </div>
-
-      <!-- Quarto -->
-
-      <div class="card col-lg-3">
-
-        <article>
-          <img src="https://http2.mlstatic.com/D_Q_NP_846775-MLM26498913729_122017-AB.webp" alt="case">
-          <i class="heart">
-            <img width="20" src="http://www.onlygfx.com/wp-content/uploads/2017/08/red-watercolor-heart-2-1-300x267.png"
-              alt="">
-          </i>
-          <i class="trucky">
-            <img width="30" src="https://cdn3.iconfinder.com/data/icons/sympletts-part-10/128/truck-speed-512.png"
-              alt="lil truck">
-          </i>
-        </article>
-        <article class="price">
-          <h2>$ 349</h2>
-          <p>12 x $ 34.48</p>
-        </article>
-        <article class="description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </article>
-      </div>
+    <div class ='row' id='resultado'>
+      <a>O Valor do seu Carrinho está em R$   </a>
+      <input id="valor-total" type="Value" placeholder="Value" aria-label="Value" disabled>
     </div>
 
-    <!-- /div container -->
+    <!-- Cards  -->
+
+<!-- primeira linha -->
+    <div class='row' id='cards'>
+
+
+
+      <!-- /div row & container -->
+    </div>
   </div>
 
 </body>

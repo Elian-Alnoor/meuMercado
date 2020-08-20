@@ -1,9 +1,11 @@
-.card{
+  .card{
     width:224px;
     border:1px solid grey;
     font-family:Avenir;
     float:left;
     margin:auto;
+    background-color: transparent;
+    
   }
   .card article{
     position:relative;
@@ -22,8 +24,8 @@
   .card:hover .heart{
     opacity:1;
   }
-  .trucky{
-    position:absolute;
+  .btn{
+    position: absolute;
     bottom: -20px;
     right: 15px;
     background-color:darkgrey;
@@ -42,7 +44,23 @@
   .card:hover .description p{
     height:50px;
     opacity:1;
-    
   }
 
+  .container {
+    justify-content: space-around;
+    background-image: url('background3.jpg');
+  }
+  .imagem-produto{
+  height: 200px;
+  width: 250px;
+  }
   
+  #resultado a{
+    font-family: fantasy;
+    text-decoration-style: solid;
+  }
+
+  .navbar-brand img{
+    height: 50px;
+    width: 50px;
+  }
