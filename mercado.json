@@ -35,16 +35,21 @@
       "nome": "Tomate",
       "preco": 6.4,
       "foto": "tomate.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "Maracujá",
+      "preco": 7,
+      "foto": "maracuja.jpeg"
+    },
+    {
+      "id": 8,
+      "nome": "Guayaba",
+      "preco": 9,
+      "foto": "guayaba.jpg"
     }
   ],
   "Carrinho": [
-    {
-      "id": 3,
-      "nome": "Cenoura",
-      "preco": 4.8,
-      "foto": "cenoura.jpg",
-      "quantidade": "1",
-      "total": 4.8
-    }
+    
   ]
 }

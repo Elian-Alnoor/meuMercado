@@ -3,7 +3,6 @@ let urlCa = 'http://localhost:3000/Carrinho/'
 
 axios.get(urlPro)
 .then( ({data}) => {
-    console.log(data)
     criarCard (data)
     adicionarEventoNoBotao ()
     
@@ -73,26 +72,24 @@ function adicionarProdutoAoCarrinho(produto){
     if(produto.quantidade > 0){
         alert(`Você adicionou ${produto.quantidade} ${produto.nome}(s) ao seu carrinho`)
         axios.post(urlCa, produto) 
-        .then(res => {
-          valorTotalDoCarrinho()
-        })
+        let soma = soma + (produto.quantidade * produto.preco)
+        document.getElementById("valor-total").value = soma
     } else{
         alert('Você não definiu a quantidade desejada!')
     }
 }
 
-function valorTotalDoCarrinho () {
-  axios.get(urlCa) 
-  .then(res => {
-    let soma = 0
-    for(i=0; i<carrinho.length; i++){
-      let produtoAtual = res.data[i]
-      let valorDoProdutoAtual = produtoAtual.preco * produtoAtual.quantidade
-      soma = soma + valorDoProdutoAtual
-    }
-    document.getElementById('valor-total').value = soma
-  })
-}
+// function valorTotalDoCarrinho () {
+//   axios.get(urlCa) 
+//   .then(res => {
+//     let soma = 0
+//     for(i=0; i<carrinho.length; i++){
+//       let produtoAtual = res.data[i]
+//       soma = soma + produtoAtual.total
+//     }
+    
+//   })
+// }
 
 // window.onload = function (){
 //   let botoes = document.querySelectorAll('.produto .btn')
